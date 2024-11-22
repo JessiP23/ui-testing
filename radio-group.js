@@ -33,6 +33,7 @@ class RadioGroup extends HTMLElement{
             case VK_UP:
             case VK_LEFT: {
                 // this decrements the selected value
+                // when they click the button we dont want it to scroll the page up so we use preventDefault
                 e.prevenetDefault();
 
                 if (this.selected === 0) {
@@ -40,7 +41,7 @@ class RadioGroup extends HTMLElement{
                 } else {
                     this.selected--;
                 }
-                
+
                 break;
             }
 
