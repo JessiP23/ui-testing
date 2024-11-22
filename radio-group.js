@@ -31,10 +31,19 @@ class RadioGroup extends HTMLElement{
         switch(e.keyCode) {
             case VK_UP:
                 case VK_LEFT: {
-                    e.preventDefault();
-                    this._selected = Math.max(0, this._selected - 1);
+                    
                     break;
                 }
         }
     }
+
+    handleClick(e) {
+
+    }
+
+    get selected() {
+
+    }
 }
+
+window.customElements.define('radio-group', RadioGroup);
