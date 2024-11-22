@@ -48,7 +48,7 @@ class RadioGroup extends HTMLElement{
             }
 
             // if someone clicks on down or right increment the selected item
-            case VG_DOWN:
+            case VK_DOWN:
             case VK_RIGHT: {
                 e.prevenetDefault();
 
