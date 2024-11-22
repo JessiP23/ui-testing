@@ -2,6 +2,8 @@
 
 // create my own custom elements in html
 
+// constructor is a special method in JavaScript classes that is called when a new instance of the class is created.
+
 // extending the native html element
 class RadioButton extends HTMLElement {
     // this is just for like making sure that properly setup the current class
