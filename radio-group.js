@@ -34,6 +34,11 @@ class RadioGroup extends HTMLElement{
                 
                 break;
             }
+            case VG_DOWN:
+            case VK_RIGHT: {
+                
+                break;
+            }
         }
     }
 
