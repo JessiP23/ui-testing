@@ -42,7 +42,20 @@ class RadioGroup extends HTMLElement{
     }
 
     set selected(idx) {
+        if (isFinite(this.selected)) {
+            let previouslySelected = this.radios(this.selected);
+            previouslySelected.tabIndex = -1;
+            previouslySelected.removeAttribute('aria-checked', false);
+        }
 
+        // set the new button to tabindex 0 and focus it
+        let newSelected = this.radios[idx];
+        newSelected.tabIndex = 0;
+        newSelected.focus();
+        newSelected.setAttribute('aria-checked', true);
+
+        this.setAttribute('selected', idx);
+        this._selected = idx;
     }
 
     //if something requrest the value calls this method
