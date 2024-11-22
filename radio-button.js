@@ -10,6 +10,8 @@ class RadioButton extends HTMLElement {
 
     // this constructor ensures that the object is correctly is set up
     constructor() {
+        // calls the constructor of the parent class
+        // is like: Hey, I'm creating a new HTML element. Please set it up as a regular element, and then I'll add my own custom behavior to it.
         super();
     }
 
