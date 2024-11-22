@@ -7,6 +7,8 @@
 // extending the native html element
 class RadioButton extends HTMLElement {
     // this is just for like making sure that properly setup the current class
+
+    // this constructor ensures that the object is correctly is set up
     constructor() {
         super();
     }
