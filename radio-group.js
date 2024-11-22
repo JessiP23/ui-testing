@@ -47,7 +47,7 @@ class RadioGroup extends HTMLElement{
 
     //if something requrest the value calls this method
     get selected() {
-
+        return this._selected;
     }
 }
 
