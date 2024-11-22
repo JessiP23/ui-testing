@@ -30,10 +30,10 @@ class RadioGroup extends HTMLElement{
     handleKeyDown(e) {
         switch(e.keyCode) {
             case VK_UP:
-                case VK_LEFT: {
-                    
-                    break;
-                }
+            case VK_LEFT: {
+                
+                break;
+            }
         }
     }
 
