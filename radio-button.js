@@ -16,6 +16,8 @@ class RadioButton extends HTMLElement {
     }
 
     // every custom element has its own lifecycle methods that hook to run my own code
+
+    // this is called when the element is added to the DOM
     connectedCallback() {
         // this is the first method that runs when the element is added to the DOM
         this.setAttribute('role', 'radio');
