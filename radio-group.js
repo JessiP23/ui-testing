@@ -51,6 +51,7 @@ class RadioGroup extends HTMLElement{
 
         // set the new button to tabindex 0 and focus it
         let newSelected = this.radios[idx];
+        // setting the tabindex to 0
         newSelected.tabIndex = 0;
         newSelected.focus();
         newSelected.setAttribute('aria-checked', true);
