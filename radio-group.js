@@ -29,12 +29,14 @@ class RadioGroup extends HTMLElement{
 
     handleKeyDown(e) {
         switch(e.keyCode) {
-            // if someone clicks on up or left decrement the selected value
+            // if someone clicks on up or left decrement the selected item
             case VK_UP:
             case VK_LEFT: {
                 
                 break;
             }
+
+            // if someone clicks on down or right increment the selected item
             case VG_DOWN:
             case VK_RIGHT: {
                 
