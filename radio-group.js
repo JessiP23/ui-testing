@@ -41,6 +41,10 @@ class RadioGroup extends HTMLElement{
 
     }
 
+    set selected(idx) {
+        
+    }
+
     get selected() {
 
     }
