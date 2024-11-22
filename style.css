@@ -1,0 +1,12 @@
+.btn {
+    display: inline-block;
+    background: tomato;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
