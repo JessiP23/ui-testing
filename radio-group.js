@@ -32,6 +32,14 @@ class RadioGroup extends HTMLElement{
             // if someone clicks on up or left decrement the selected item
             case VK_UP:
             case VK_LEFT: {
+                // this decrements the selected value
+                e.prevenetDefault();
+
+                if (this.selected === 0) {
+                    this.selected = this.radios.length - 1;
+                } else {
+                    this.selected--;
+                }
                 
                 break;
             }
