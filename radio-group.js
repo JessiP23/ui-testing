@@ -38,6 +38,7 @@ class RadioGroup extends HTMLElement{
 
                 // this.selected is calling the getter
                 if (this.selected === 0) {
+                    // is -1 because is a zero based index array
                     this.selected = this.radios.length - 1;
                 } else {
                     this.selected--;
