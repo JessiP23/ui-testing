@@ -10,6 +10,8 @@ class RadioGroup extends HTMLElement{
 
     connectedCallback() {
         this.setAttribute('role', 'radiogroup');
+
+        // query all the radio children
         this.radios = Array.from(this.querySelectorAll('radio-button'));
 
         // setup initial state
