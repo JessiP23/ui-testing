@@ -42,6 +42,7 @@ class RadioGroup extends HTMLElement{
     }
 
     set selected(idx) {
+        // this is calling our getter
         if (isFinite(this.selected)) {
             let previouslySelected = this.radios(this.selected);
             previouslySelected.tabIndex = -1;
