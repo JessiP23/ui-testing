@@ -15,6 +15,7 @@ class RadioGroup extends HTMLElement{
         this.radios = Array.from(this.querySelectorAll('radio-button'));
 
         // setup initial state
+        // is mapped to a select5ed property
         if (this.hasAttribute('selected')) {
             let selected = this.getAttribute('selected');
             this._selected = selected;
@@ -29,6 +30,11 @@ class RadioGroup extends HTMLElement{
     handleKeyDown(e) {
         switch(e.keyCode) {
             case VK_UP:
+                case VK_LEFT: {
+                    e.preventDefault();
+                    this._selected = Math.max(0, this._selected - 1);
+                    break;
+                }
         }
     }
 }
