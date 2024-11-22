@@ -9,6 +9,7 @@ class RadioButton extends HTMLElement {
 
     // every custom element has its own lifecycle methods that hook to run my own code
     connectedCallback() {
+        // this is the first method that runs when the element is added to the DOM
         this.setAttribute('role', 'radio');
         this.setAttribute('tabindex', -1);
         this.setAttribute('aria-checked', 'false'); 
