@@ -1,3 +1,5 @@
+// Custom elements allow to create our own HTML tags with specific behaviors and styles. 
+
 // create my own custom elements in html
 
 // extending the native html element
