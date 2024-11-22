@@ -36,6 +36,7 @@ class RadioGroup extends HTMLElement{
                 // when they click the button we dont want it to scroll the page up so we use preventDefault
                 e.prevenetDefault();
 
+                // this.selected is calling the getter
                 if (this.selected === 0) {
                     this.selected = this.radios.length - 1;
                 } else {
